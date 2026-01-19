@@ -87,7 +87,7 @@ class TaskFormPage(ctk.CTkFrame):
         )
         self.nt_status.grid(row=4, column=1, sticky="w", **pad)
 
-        # Pre-fill
+        # Pre-fill 
         if self.edit_mode and self.task_data:
             self.nt_title.insert(0, self.task_data["title"])
             self.nt_desc.insert("1.0", self.task_data["description"] or "")

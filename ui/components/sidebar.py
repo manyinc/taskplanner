@@ -3,6 +3,8 @@ import os
 from PIL import Image
 from core.config import PALETTE, ASSETS_DIR
 
+#Współtworzone z ai
+
 class Sidebar(ctk.CTkFrame):
     def __init__(self, master, navigation_callback):
         super().__init__(master, fg_color=PALETTE["panel"], width=240, corner_radius=0)

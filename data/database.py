@@ -2,6 +2,8 @@ import sqlite3
 from core.config import DB_PATH
 from core.utils import now_pl_date, now_pl_datetime, days_left_signed, to_pl_date_from_any
 
+#Współtworzone z ai
+
 class DatabaseManager:
     def __init__(self, db_path=None):
         self.db_path = db_path or DB_PATH

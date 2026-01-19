@@ -4,6 +4,8 @@ import os
 import json
 from core.config import PALETTE, RADIUS, PRESET_AREAS, DB_PATH, save_db_config, save_areas_config, DB_CONFIG_FILE, AREAS_CONFIG_FILE
 
+#Współtworzone z ai
+
 class SettingsPage(ctk.CTkFrame):
     def __init__(self, master, db_manager):
         super().__init__(master, fg_color="transparent")

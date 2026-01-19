@@ -160,7 +160,7 @@ class HomePage(ctk.CTkFrame):
             except Exception as e:
                 ctk.CTkLabel(tile, text=f"Błąd wykresu: {e}").pack()
 
-    def _build_calendar(self):
+    def _build_calendar(self): #Współtworzone z ai
         tile = ctk.CTkFrame(self, fg_color=PALETTE["panel"], corner_radius=RADIUS)
         tile.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
         try:
@@ -180,7 +180,7 @@ class HomePage(ctk.CTkFrame):
         except ImportError:
              ctk.CTkLabel(tile, text="Brak tkcalendar").pack(expand=True)
 
-    def _build_area_chart(self, counts):
+    def _build_area_chart(self, counts): #Współtworzone z ai
         tile = ctk.CTkFrame(self, fg_color=PALETTE["panel"], corner_radius=RADIUS)
         tile.grid(row=1, column=1, sticky="nsew", padx=10, pady=10)
 
@@ -213,7 +213,7 @@ class HomePage(ctk.CTkFrame):
             except Exception as e:
                 ctk.CTkLabel(tile, text=f"Błąd: {e}").pack()
 
-    def _build_deadline_tile(self, max_due):
+    def _build_deadline_tile(self, max_due): #Współtworzone z ai
         tile = ctk.CTkFrame(self, fg_color=PALETTE["accent"], corner_radius=RADIUS)
         tile.grid(row=1, column=2, sticky="nsew", padx=10, pady=10)
         

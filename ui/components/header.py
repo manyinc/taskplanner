@@ -1,6 +1,8 @@
 import customtkinter as ctk
 from core.config import PALETTE
 
+#Współtworzone z ai
+
 class Header(ctk.CTkFrame):
     def __init__(self, master, search_callback):
         super().__init__(master, fg_color="transparent", height=70)
