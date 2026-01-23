@@ -98,9 +98,6 @@ class ImportExportPage(ctk.CTkFrame):
         if not path: return
         
         rows = self.db.list_tasks(status=None, query="", area=None)
-        # Note: Exporting ALL tasks, assuming filters are not applied to global export button on separate page
-        # Original code used current filters. Since this is now a separate page, we export all or we might need to pass filters. 
-        # The design shows Export as a separate page, likely exporting everything.
         
         try:
             with open(path, "w", newline="", encoding="utf-8-sig") as f:
@@ -127,3 +124,4 @@ class ImportExportPage(ctk.CTkFrame):
             messagebox.showinfo("Eksport CSV", "Zapisano plik CSV (UTF-8).")
         except Exception as e:
             messagebox.showerror("Eksport CSV", f"Nie udało się zapisać pliku.\n\nSzczegóły: {e}")
+
