@@ -21,21 +21,17 @@
 
 Aby uruchomić aplikację w trybie developerskim, wykonaj poniższe kroki (zalecane użycie terminala PowerShell lub CMD):
 
-1. **Utwórz środowisko wirtualne**:
+1. **Zainstaluj zależności**:
+   Możesz skorzystać z gotowego skryptu:
    ```bash
-   python -m venv .venv
+   install.bat
    ```
-
-2. **Aktywuj środowisko**:
-   - Windows (CMD): `.venv\Scripts\activate.bat`
-   - Windows (PowerShell): `.venv\Scripts\Activate.ps1`
-
-3. **Zainstaluj zależności**:
+   Lub uruchomić ręcznie:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Uruchom aplikację**:
+2. **Uruchom aplikację**:
    Możesz skorzystać z gotowego skryptu:
    ```bash
    run.bat
@@ -63,3 +59,4 @@ Aby utworzyć plik wykonywalny `.exe`:
 - `data/`: Obsługa bazy danych.
 - `ui/`: Kod interfejsu użytkownika (strony, komponenty, style).
 - `config/`: Pliki konfiguracyjne (tworzone automatycznie).
+
